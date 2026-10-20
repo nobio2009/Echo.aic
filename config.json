@@ -1,0 +1,11 @@
+{
+  "assistant_name": "Nyx",
+  "ai_mode": "hybrid",
+  "local_ai": {"enabled": true, "provider": "ollama", "base_url": "http://127.0.0.1:11434/api/chat", "model": "llama3.2", "timeout_seconds": 45},
+  "online_ai": {"enabled": false, "provider": "openai_compatible", "base_url": "https://api.openai.com/v1/chat/completions", "model": "gpt-4o-mini", "api_key_env": "NYX_AI_API_KEY", "timeout_seconds": 45},
+  "speech": {"enabled": true, "sample_rate": 16000, "model_path": "models/vosk-model-small-en-us-0.15", "device_index": null, "silence_seconds": 1.1, "max_listen_seconds": 12, "tts_enabled": true, "speech_rate": 180},
+  "wake_word": {"enabled": true, "phrase": "hey nyx", "command_timeout_seconds": 10},
+  "homelab": {"services": []},
+  "memory": {"enabled": true, "history_file": "data/history.json", "max_messages": 12},
+  "gui": {"title": "Nyx Assistant", "width": 900, "height": 650}
+}
