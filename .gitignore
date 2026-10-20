@@ -1,0 +1,15 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+data.env
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local media files; add only media you have permission to distribute
+local_music/*.mp3
+
+# Spotify OAuth cache
+.cache
